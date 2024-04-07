@@ -1,0 +1,254 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #416D19;
+
+}
+header {
+    background-color: #416D19;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.panel{
+    height: 39px;
+    background-color:  #BFEA7C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops p{
+    display: inline;
+    margin-left: 15px;
+}
+.panel-ops p:hover {
+    color: green;
+}
+header h1 {
+   position: relative;
+   font-size: 4vw;
+   color: #FFF67E;
+   text-transform: uppercase;
+   font-family: 'Times New Roman', Times, serif; 
+}
+nav ul {
+    list-style-type: none;    
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+nav ul li a {
+    text-decoration: underline;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+section {
+    padding: 40px;
+}
+
+.about {
+    background-color: #BFEA7C;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 50px 0;   
+}
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: #FFF67E;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    text-align: center;
+}
+.about h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.services {
+    background-color: #bfea7c;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 50px 0;
+}
+  
+.chat-container {
+    background: linear-gradient(to right, #bfea7c, #416D19); /* Gradient background */
+    border-radius: 10px; /* Rounded corners */
+    width: 250px; /* Adjust width as needed */
+    margin-right: 20px ;
+    padding: 20px;
+    box-sizing: border-box;
+    float: right; /* Include padding in width */
+  }
+  .chatbot-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;  /* Optional background color */
+  }
+  
+  .chatbot-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .chat-history {
+    height: 300px; /* Adjust height as needed */
+    overflow-y: scroll; /* Enable scrolling */
+  }
+  
+  .chat-message { /* Individual message styling */
+    margin-bottom: 10px;
+    display: flex;
+  }
+  
+  .chat-message.you { /* Styling for your messages (right side) */
+    justify-content: flex-end;
+  }
+  
+  .chat-message.other { /* Styling for received messages (left side) */
+    justify-content: flex-start;
+  }   
+  
+  .chat-input {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .chat-input input {
+    flex: 1; /* Text input takes most space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .chat-input button {
+    padding: 10px 15px;
+    background: #4CAF50; /* Green send button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.services h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.service-card p {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+footer p {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.about, .services {
+    animation: fadeIn 1s ease;
+}
+/* Existing styles */
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    margin: 0;
+}
+
+.service-card p {
+    text-align: center;
+}
